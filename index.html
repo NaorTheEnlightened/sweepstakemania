@@ -99,12 +99,7 @@
     
     <!-- Update the Google forms URL in action-->
     <form  action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfaluI5xGaYkUeC4B2Y7hBmqv0lZWbYA0DstxOuPpE53a8AYQ/formResponse" method="post" target="hidden_iframe" onsubmit="return validateForm(); ">
-
-      
-      <div class="w3-section">
-        <label>Name</label>
-        <input class="w3-input w3-border" type="text" placeholder="Name" id="name" required name="entry.1910476212">
-      </div>
+    
       <div class="w3-section">
         <label>Email</label>
         <input class="w3-input w3-border" type="text" placeholder="Email" id="email" required name="emailAddress">
@@ -117,23 +112,7 @@
 </div>
 </div>
     <script type="text/javascript">
-    function validateName() {
-            var name = document.getElementById('name').value;
-            if(name.length == 0) {
-              alert("Name can't be blank") ;
-              return false;
-
-            }
-            if (!name.match(/^[a-zA-Z]{3,}(?: [a-zA-Z]+){0,2}$/)) {
-              alert("Please enter your correct name") ;//Validation Message
-              return false;
-            }
-            return true;
-          }
-
-           return true;
-
-         }
+    
 
          function validateEmail () {
 
@@ -156,7 +135,7 @@
 
 
         function validateForm() {
-          if (!validateName() || !validateEmail()) {
+          if (!validateEmail()) {
 
             alert("Form not submitted");//Validation Message
             return false;

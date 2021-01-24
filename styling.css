@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0; font-family: 'Mitr', sans-serif;
+
+
+}
+
+.bg{
+    
+    text-align: center;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(images/christmas-background.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+    position: relative;    
+}
+
+#wiifm{
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    font-size: 35px;
+    color: black; 
+
+}
+
+#phone{
+    margin-top: 1%;
+}
+
+
+#btn{
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 30px;
+    border-radius: 25px;
+    border-width: 5px;
+}
+
+#btn:hover{
+    background-color: #ffffff;
+    border-color: red;
+}
+
+#email{
+    font-size: 20px;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+#gif{
+    display: none;
+    border-color: aliceblue;
+    border-radius: 25px;
+    margin-bottom: 2.5%;
+}

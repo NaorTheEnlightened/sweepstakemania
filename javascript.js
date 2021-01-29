@@ -1,6 +1,6 @@
 function callback(response){
     console.log(response);
-    if(response.country_code == "GB")
+   /* if(response.country_code == "GB")
         console.log("Authorized UK Visitor! Easy Conversion :)");
     else if(response.country_code == "US")
         window.location.replace("https://afflat3e1.com/lnk.asp?o=21010&c=918277&a=518164&k=0&l=21960");
@@ -16,7 +16,7 @@ function callback(response){
         alert("WELCOME DEAR ISRAELI VISITOR!");
     else
         window.location.replace("https://www.mb103.com/lnk.asp?o=20902&c=918277&a=518164&k=0&l=21952");
-    
+    */
     var dataInfo = [];
      
     for(var i in response)

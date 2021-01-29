@@ -9,7 +9,7 @@
     
     text-align: center;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(images/christmas-background.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(img/christmas-background.jpg);
     background-position: center;
     background-size: cover;
     overflow-x: hidden;

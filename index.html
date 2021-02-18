@@ -11,28 +11,7 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" href="favicon.ico">
 
-        
-        <script type="text/javascript">
-    /** This section is only needed once per page if manually copying **/
-    if (typeof MauticSDKLoaded == 'undefined') {
-        var MauticSDKLoaded = true;
-        var head            = document.getElementsByTagName('head')[0];
-        var script          = document.createElement('script');
-        script.type         = 'text/javascript';
-        script.src          = 'http://mautic.malkovdeals.ml/media/js/mautic-form.js';
-        script.onload       = function() {
-            MauticSDK.onLoad();
-        };
-        head.appendChild(script);
-        var MauticDomain = 'http://mautic.malkovdeals.ml';
-        var MauticLang   = {
-            'submittingMessage': "Please wait..."
-        }
-    }else if (typeof MauticSDK != 'undefined') {
-        MauticSDK.onLoad();
-    }
-</script>
-
+        <script type="text/javascript" src="//mautic.malkovdeals.ml/form/generate.js?id=1"></script>
         <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
         <script>
           window.OneSignal = window.OneSignal || [];

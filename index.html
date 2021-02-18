@@ -11,7 +11,27 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" href="favicon.ico">
 
-        <script type="text/javascript" src="//mautic.malkovdeals.ml/form/generate.js?id=1"></script>
+        <script type="text/javascript">
+    /** This section is only needed once per page if manually copying **/
+    if (typeof MauticSDKLoaded == 'undefined') {
+        var MauticSDKLoaded = true;
+        var head            = document.getElementsByTagName('head')[0];
+        var script          = document.createElement('script');
+        script.type         = 'text/javascript';
+        script.src          = 'https://mautic.malkovdeals.ml/media/js/mautic-form.js';
+        script.onload       = function() {
+            MauticSDK.onLoad();
+        };
+        head.appendChild(script);
+        var MauticDomain = 'https://mautic.malkovdeals.ml';
+        var MauticLang   = {
+            'submittingMessage': "Please wait..."
+        }
+    }else if (typeof MauticSDK != 'undefined') {
+        MauticSDK.onLoad();
+    }
+</script>
+
         <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
         <script>
           window.OneSignal = window.OneSignal || [];
@@ -57,6 +77,7 @@
             <iframe width="560" height="315" src="https://www.youtube.com/embed/rXUc7rfCGvc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         
+
 <style type="text/css" scoped>
     .mauticform_wrapper { max-width: 600px; margin: 10px auto; }
     .mauticform-innerform {}
@@ -83,7 +104,7 @@
     .mauticform-pagebreak-wrapper .mauticform-button-wrapper {  display: inline; }
 </style>
 <div id="mauticform_wrapper_exampleform" class="mauticform_wrapper">
-    <form autocomplete="false" role="form" method="post" action="http://mautic.malkovdeals.ml/form/submit?formId=1" id="mauticform_exampleform" data-mautic-form="exampleform" enctype="multipart/form-data">
+    <form autocomplete="false" role="form" method="post" action="https://mautic.malkovdeals.ml/form/submit?formId=1" id="mauticform_exampleform" data-mautic-form="exampleform" enctype="multipart/form-data">
         <div class="mauticform-error" id="mauticform_exampleform_error"></div>
         <div class="mauticform-message" id="mauticform_exampleform_message"></div>
         <div class="mauticform-innerform">
@@ -109,6 +130,7 @@
 
         </form>
 </div>
+
 
         
         
